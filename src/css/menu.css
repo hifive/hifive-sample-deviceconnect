@@ -1,0 +1,60 @@
+/* MENU PAGE*/
+.main-content .logo_panel {
+	width: 99%;
+	max-width: 470px;
+}
+
+.app_item {
+	background: #E8E5E5;
+	width: 250px;
+	height: 350px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #E8E5E5;
+	border-radius: 5px;
+	text-align: center;
+	margin: 1em;
+}
+
+.app_item  figcaption {
+	position: relative;
+	width: 80%;
+	text-align: left;
+	display: inline-block;
+}
+
+.app_item  figcaption  div {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	color: #2c3e50;
+	text-transform: uppercase;
+}
+
+.app_item figcaption h3 {
+	text-align: center;
+}
+
+/* display Image Hover*/
+.app_item  figcaption div:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	right: 0;
+	bottom: 40%;
+	text-align: center;
+	margin: auto;
+	width: 0%;
+	height: 2px;
+	background: #2c3e50;
+}
+
+.app_item img {
+	margin-top: 20px;
+	border: 5px solid #fff;
+	border-radius: 100%;
+	box-shadow: 5px 5px 5px 0 #ddd;
+	width: 70%;
+	/* height: 70%; */
+	display: inline-block;
+}

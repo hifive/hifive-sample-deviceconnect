@@ -1,0 +1,178 @@
+.ui-navbar {
+	display: contents;
+}
+
+.ui-navbar a {
+	height: 50px;
+}
+
+.tab-content {
+	display: none;
+}
+
+.tab-content:first-child {
+	display: block;
+}
+
+#devices .ui-header {
+	height: 60px;
+	border-style: none;
+	text-align: left;
+}
+
+#app_control .main-content {
+	width: 100%;
+	height: 80%;
+	margin-top: 5px;
+	margin-left: 0;
+	margin-bottom: 5px;
+	margin-right: 0;
+	overflow: auto;
+}
+
+#player .main-content {
+	width: 100%;
+	height: 97%;
+	margin-top: 5px;
+	margin-left: 0;
+	margin-bottom: 5px;
+	margin-right: 0;
+	overflow: auto;
+}
+
+#camera_devices {
+	width: 87vw;
+	text-align: left;
+	padding: 10px;
+	display: inline-block;
+	overflow: auto;
+}
+
+.camera-item {
+	background: #FFFF;
+	width: 22vw;
+	height: 22vw;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #E8E5E5;
+	text-align: center;
+	font-size: 3vw;
+	margin: 1em;
+	box-shadow: 2px 2px 6px 3px #D5D4D4;
+}
+
+.camera-item:active {
+	background: #EFEFEF;
+}
+
+.camera-item img {
+	margin-top: 2.5vw;
+	width: 50%;
+	display: inline-block;
+}
+
+.camera-item  figcaption {
+	height: 30%;
+	margin: 2px;
+	white-space: normal;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#remote_content {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: auto;
+}
+
+#shutterBtn {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	padding: 5px;
+	box-shadow: 0 0 5px 1px black;
+	border-radius: 100%;
+	background-image: url("../res/camera_btn.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#shutterBtn:active {
+	transform: scale(0.9, 0.9);
+}
+
+#photo_content {
+	display: inline-block;
+	overflow: auto;
+	width: 100%;
+	height: 80vh;
+}
+
+.photo-container {
+	height: 25vh;
+	margin: 2vh;
+	width: 92%;
+	box-shadow: 2px 2px 5px 1px;
+}
+
+.photo-container img {
+	width: 100%;
+	height: 100%;
+}
+
+#video_content {
+	display: inline-block;
+	overflow: auto;
+	height: 80vh;
+	width: 100vw;
+}
+
+.video-container {
+	height: 25vh;
+	margin: 1vh;
+	width: 96%;
+	box-shadow: 2px 2px 5px 1px;
+}
+
+.video-container .video-title {
+	left: 10px;
+	z-index: 1;
+}
+
+#backControl {
+	left: 0;
+	top: 0;
+	position: absolute;
+	margin: 30px;
+	z-index: 2;
+	background: transparent;
+	color: beige;
+}
+
+#vrBtn {
+	right: 0;
+	top: 0;
+	position: absolute;
+	margin: 30px;
+	z-index: 2;
+	background: transparent;
+	color: beige;
+}
+
+#webglviewer {
+	position: relative;
+	height: 100%;
+	margin: 5px;
+	overflow: hidden;
+}
+
+#webglcontent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

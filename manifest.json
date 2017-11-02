@@ -1,0 +1,6 @@
+{
+    "name": "hifive-sample-deviceconnect",
+    "short_name": "h5-dconnect",
+    "start_url": "/h5-dconnect",
+    "display": "standalone"
+}
