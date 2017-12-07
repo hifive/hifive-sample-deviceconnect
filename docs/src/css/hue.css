@@ -1,0 +1,107 @@
+#hue .ui-header {
+	height: 60px;
+	border-style: none;
+	text-align: left;
+}
+
+#hue .main-content {
+	width: 100%;
+	height: 80%;
+	margin-top: 5px;
+	margin-left: 0;
+	margin-bottom: 5px;
+	margin-right: 0;
+	overflow: auto;
+}
+
+#hue_control .main-content {
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+	margin-left: 0;
+	margin-bottom: 5px;
+	margin-right: 0;
+	overflow: auto;
+}
+
+#hue_devices {
+	width: 87vw;
+	text-align: left;
+	padding: 10px;
+	display: inline-block;
+	overflow: auto;
+}
+
+.hue-item {
+	background: #FFFF;
+	width: 22vw;
+	height: 22vw;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #E8E5E5;
+	text-align: center;
+	font-size: 3vw;
+	margin: 1em;
+	box-shadow: 2px 2px 6px 3px #D5D4D4;
+}
+
+.hue-item:active {
+	background: #EFEFEF;
+}
+
+.hue-item img {
+	margin-top: 2.5vw;
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+}
+
+.hue-item  figcaption {
+	height: 30%;
+	margin: 2px;
+	white-space: normal;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.light-item {
+	background: #FFFF;
+	width: 22vw;
+	height: 22vw;
+	position: relative;
+	display: inline-block;
+	border: 1px solid #E8E5E5;
+	text-align: center;
+	font-size: 3vw;
+	margin: 1em;
+	box-shadow: 2px 2px 6px 3px #D5D4D4;
+}
+
+.light-item:active {
+	background: #EFEFEF;
+}
+
+.light-item img {
+	margin-top: 2.5vw;
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+}
+
+.light-item  figcaption {
+	height: 30%;
+	margin: 2px;
+	white-space: normal;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#hue_content {
+	padding: 5px;
+}
+
+#hue_content canvas {
+	padding: 5px;
+}

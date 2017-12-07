@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Hifve Device Connect Theta Sample</title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+<!-- CSS -->
+<link href="./vendor/fw/jqm/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
+<link href="./vendor/fw/h5/h5.css" rel="stylesheet" />
+
+<link href="./src/css/style.css" rel="stylesheet" />
+<link href="./src/css/hue.css" rel="stylesheet" />
+<link href="./src/css/loader.css" rel="stylesheet" />
+<link href="./src/css/galery.css" rel="stylesheet" />
+</head>
+<body>
+	<!--
+    <div id="hue" data-role="page">
+        <div data-role="header" data-theme="b">
+        	<a class="home-btn" id="homeBtn">
+        		<img src="./src/res/icon_hifive.png" alt="Thumb"/>
+	        </a>
+        </div>
+        <div class="main-content" id="hue_list">
+        	<h2>HUE Page</h2>
+        	<input type="button" id="refreshBtn" value="Refresh">
+			<div id="hue_devices"></div>
+			<div id="errors"></div>
+        </div>
+    </div>
+     -->
+	<!-- HUE Light -->
+	<div id="hue_light" data-role="page">
+		<div data-role="header" data-theme="b" class="app-header">
+			<a href="" id="homeBtn" class="back-btn" data-icon="carat-l" data-iconpos="notext"></a> <span class="ui-title">List
+				Light</span>
+		</div>
+		<div class="main-content" id="theta_player">
+			<div id="light_list"></div>
+		</div>
+	</div>
+	<!-- HUE CONTROL -->
+	<div id="hue_control" data-role="page">
+		<div data-role="header" data-theme="b" class="app-header">
+			<a href="#hue_light" class="back-btn" data-icon="carat-l" data-iconpos="notext"></a> <span class="ui-title">HUE
+				Control</span>
+		</div>
+		<div class="main-content" id="theta_player">
+			<div style="text-align: center">
+				<!-- Bridge -->
+				<div id="bridge" style="font-size: xx-small"></div>
+				<!-- 端末 -->
+				<div id="device" style="font-size: xx-small"></div>
+			</div>
+
+			<div id="hue_content" style="text-align: center" class="ui-grid-a">
+				<input class="flipswitch" type="checkbox" data-role="flipswitch" /> <input type="range" class='slider_alpha' min='0'
+					max='100' value='100' />
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- Vendor -->
+<script src="./vendor/fw/jquery/jquery-2.js" type="text/javascript"></script>
+<script src="./vendor/fw/jqm/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
+<script src="./vendor/fw/h5/ejs-h5mod.js" type="text/javascript"></script>
+<script src="./vendor/fw/h5/h5.dev.js" type="text/javascript"></script>
+<script src="./vendor/fw/threejs/three.js" type="text/javascript"></script>
+<script src="./vendor/fw/threejs/OrbitControls.js" type="text/javascript"></script>
+<script src="./vendor/fw/threejs/StereoEffect.js" type="text/javascript"></script>
+<script src="./vendor/fw/threejs/DeviceOrientationControls.js" type="text/javascript"></script>
+<script src="./vendor/dconnect/dconnectsdk-2.2.0.js" type="text/javascript"></script>
+<!-- JS -->
+
+<script src="./src/js/Model/IOTModel.js" type="text/javascript"></script>
+<script src="./src/js/Model/IOTFactory.js" type="text/javascript"></script>
+<script src="./src/js/Model/MediaStreamModel.js" type="text/javascript"></script>
+<script src="./src/js/Model/LightModel.js" type="text/javascript"></script>
+<script src="./src/js/Model/FileModel.js" type="text/javascript"></script>
+<script src="./src/js/Common/Utils.js" type="text/javascript"></script>
+<script src="./src/js/Common/ColorPicker.js" type="text/javascript"></script>
+<script src="./src/js/Common/DConnect.js" type="text/javascript"></script>
+<script src="./src/js/Connector/LightConnector.js" type="text/javascript"></script>
+<script src="./src/js/Controller/HueController.js" type="text/javascript"></script>
+</html>

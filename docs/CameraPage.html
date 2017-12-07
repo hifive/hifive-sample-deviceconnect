@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>DConnect Demo</title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!-- CSS -->
+<link href="./vendor/fw/jqm/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
+<link href="./vendor/fw/h5/h5.css" rel="stylesheet" />
+
+<link href="./src/css/style.css" rel="stylesheet" />
+<link href="./src/css/camera.css" rel="stylesheet" />
+<link href="./src/css/loader.css" rel="stylesheet" />
+
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+</head>
+
+<body>
+	<!-- CAMERA DEVICES SELECTION -->
+	<div id="devices" data-role="page">
+		<div data-role="header" data-theme="b">
+			<a class="home-btn" id="homeBtn"> <img src="./src/res/icon_hifive.png" alt="Thumb" />
+			</a>
+		</div>
+		<div class="main-content" id="camera_list">
+			<h2>Camera Devices</h2>
+			<input type="button" id="refreshBtn" value="Refresh">
+			<div id="camera_devices"></div>
+		</div>
+	</div>
+	<!-- CAMERA APPLICATION -->
+	<div id="app_control" data-role="page">
+		<div data-role="header">
+			<a href="#devices" class="back-btn" data-icon="carat-l" data-iconpos="notext"></a> <span class="ui-title">CAMERA</span>
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="ui-btn-active" data-href="remote_content">Remote</a></li>
+					<li><a href="#" data-href="photo_content">Photo</a></li>
+					<!--
+			    <li><a href="#" data-href="video_content">Video</a></li>
+			     -->
+				</ul>
+			</div>
+
+		</div>
+		<div class="main-content" id="camera_control">
+			<div id="remote_content" class="tab-content">
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					    <input data-icon="camera" type="radio" name="shutter-mode" id="shutter-mode-camera" value="camera" checked>
+					<label for="shutter-mode-camera">Camera</label>
+					<!-- <input data-icon="video" type="radio" name="shutter-mode" id="shutter-mode-video" value="video"><label for="shutter-mode-video">Video</label> -->
+				</fieldset>
+
+				<a id="shutterBtn"></a>
+			</div>
+			<div id="photo_content" class="tab-content"></div>
+			<div id="video_content" class="tab-content"></div>
+			<div id="live_content" class="tab-content"></div>
+			<div id="setting_content" class="tab-content"></div>
+		</div>
+	</div>
+	<!-- CAMERA PLAYER -->
+	<div id="player" data-role="page">
+		<div class="main-content" id="camera_player">
+
+			<a href="#app_control" data-inline="true" data-role="button" data-icon="carat-l" data-iconpos="left" id="backControl">Back</a>
+			<a href="#" data-role="button" data-inline="true" data-icon="carat-r" data-iconpos="right" id="vrBtn">VR Mode</a>
+			<div id="webglviewer">
+				<div id="webglcontent"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+<!-- JS Framework -->
+<script src="./vendor/fw/jquery/jquery-2.js" type="text/javascript"></script>
+<script src="./vendor/fw/jqm/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
+<script src="./vendor/fw/h5/ejs-h5mod.js" type="text/javascript"></script>
+<script src="./vendor/fw/h5/h5.dev.js" type="text/javascript"></script>
+<script src="./vendor/fw/threejs/three.js" type="text/javascript"></script>
+<script src="./vendor/fw/threejs/OrbitControls.js" type="text/javascript"></script>
+<script src="./vendor/fw/threejs/StereoEffect.js" type="text/javascript"></script>
+<script src="./vendor/fw/threejs/DeviceOrientationControls.js" type="text/javascript"></script>
+<script src="./vendor/dconnect/dconnectsdk-2.2.0.js" type="text/javascript"></script>
+<!-- JS -->
+
+<script src="./src/js/Model/IOTModel.js" type="text/javascript"></script>
+<script src="./src/js/Model/IOTFactory.js" type="text/javascript"></script>
+<script src="./src/js/Model/MediaStreamModel.js" type="text/javascript"></script>
+<script src="./src/js/Model/FileModel.js" type="text/javascript"></script>
+<script src="./src/js/Common/Utils.js" type="text/javascript"></script>
+<script src="./src/js/Common/DConnect.js" type="text/javascript"></script>
+<script src="./src/js/Connector/FileConnector.js" type="text/javascript"></script>
+<script src="./src/js/Connector/MediaStreamConnector.js" type="text/javascript"></script>
+<script src="./src/js/Controller/VRController.js" type="text/javascript"></script>
+<script src="./src/js/Controller/CameraController.js" type="text/javascript"></script>
+
+</html>

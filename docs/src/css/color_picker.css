@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.main-wheel {
+	padding: 10px;
+	display: inline-block;
+}
+
+.main-wheel {
+	position: relative;
+}
+
+.colors-grid .colors-picker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 6px;
+	height: 6px;
+	cursor: pointer;
+	border-radius: 6px;
+	border: solid 2px black;
+}
